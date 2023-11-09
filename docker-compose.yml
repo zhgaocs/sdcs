@@ -1,0 +1,28 @@
+version: '3'
+services:
+  server1:
+    build: .
+    environment:
+      - TOTAL_SERVERS=3
+      - CURRENT_ID=1
+    hostname: server1
+    ports: 
+      - "9527:5000"
+
+  server2:
+    build: .
+    environment:
+      - TOTAL_SERVERS=3
+      - CURRENT_ID=2
+    hostname: server2
+    ports: 
+      - "9528:5000"
+
+  server3:
+    build: .
+    environment:
+      - TOTAL_SERVERS=3
+      - CURRENT_ID=3
+    hostname: server3
+    ports: 
+      - "9529:5000"
