@@ -53,5 +53,5 @@ To test SDCS, download the `sdcs-test.sh` script from [here](https://github.com/
 
 ```bash
 chmod +x sdcs-test.sh
-./sdcs-test.sh
+./sdcs-test.sh 3
 ```
