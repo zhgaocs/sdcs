@@ -2,6 +2,12 @@
 
 SDCS is a straightforward distributed cache system designed to store and retrieve key-value pairs efficiently.
 
+## Project Description
+
+SDCS, built with gRPC and Python, provides a simple way to store and retrieve key-value pairs. Each server node can handle requests and has the capability to forward requests to other nodes.
+
+![sdcs](./img/sdcs.png)
+
 ## Environment Requirements
 
 Ensure that your system meets the following requirements:
@@ -18,22 +24,19 @@ The project has the following structure:
 .
 ├── docker-compose.yml
 ├── Dockerfile
+├── img
+│   └── sdcs.png
 ├── proto
 │   └── kvstore.proto
+├── README.md
 ├── scripts
 │   └── start_kvstore.sh
-├── src
-│   ├── grpc_server.py
-│   └── http_server.py
-└── test
-    └── sdcs-test.sh
+└── src
+    ├── grpc_server.py
+    ├── http_server.py
+    ├── kvstore_pb2_grpc.py
+    └── kvstore_pb2.py
 ```
-
-## Project Description
-
-SDCS, built with gRPC and Python, provides a simple way to store and retrieve key-value pairs. Each server node can handle requests and has the capability to forward requests to other nodes.
-
-![sdcs](./images/sdcs.png)
 
 ## Installation & Testing
 
